@@ -1,4 +1,4 @@
--- Create the 'ipf' schema if it doesn't exist
+-- Create the 'ipf' schema if it doesn't exist.
 CREATE DATABASE IF NOT EXISTS ipf;
 
 -- Use the 'ipf' schema

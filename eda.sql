@@ -1,7 +1,7 @@
 USE ipf;
 
 
--- I want to know how many weight classes there are
+-- I want to know how many weight classes there are in total.
 SELECT 
     COUNT(DISTINCT WeightClassKg) as unique_weightclasses
 FROM ipf;
