@@ -60,7 +60,7 @@ In addition to this, it would be interesting to see data on non-binary lifters. 
 | M | 414.9 | 1407.5 |
 | Mx | 282.9 | 555.7 |
 
-This dataset unfortunately does not give us further details about the Sex column (for instance, whether Mx athletes self-identified as non-binary, or in which competitions they competed), buth it would nevertheless be interesting to determine whether these differences are statistically significant.  In future work, I can test whether these, and other values, are statistically significant given the assumption that athletes follow a normal distribution.
+This dataset unfortunately does not give us further details about the Sex column (for instance, whether Mx athletes self-identified as non-binary, or in which weight classes they competed), buth it would nevertheless be interesting to determine whether these differences are statistically significant.  In future work, I can test whether these, and other values, are statistically significant given the assumption that athletes follow a normal distribution.
 
 
 
