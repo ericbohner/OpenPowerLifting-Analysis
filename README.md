@@ -55,7 +55,7 @@ This area is a work in progress.  I want to evaluate different Strength Performa
 In addition to this, it would be interesting to see data on non-binary lifters.  There is frequent (and often heated) discussion within the powerlifting community whether trans men or trans women should be able to compete, and in which division.  Arguments to the effect of "trans women have an unfair advantage over other women because they had the benefits of increased testosterone during puberty" are often thrown around (often less eloquently than I've described it).  With the small dataset available to me, it would be interesting to see whether there is any truth to such a claim.  A very quick query, for instance, highlights the following differences:
 
 | Sex | Average TotalKg | Max TotalKG |
-|-----+-----------------+-------------|
+|-----|-----------------|-------------|
 | F | 250.5 | 932.5 |
 | M | 414.9 | 1407.5 |
 | Mx | 282.9 | 555.7 |
