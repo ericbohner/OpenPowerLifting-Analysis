@@ -70,6 +70,67 @@ ORDER BY Equipment, Sex, WeightClassKg;
 SELECT *
 FROM CurrentRecordHolders;
 
+DESCRIBE openpl;
+
+-- Who has the highest raw total?  Who has the highest DOTS?
+SELECT
+    CASE WHEN TotalKg = max_total_kg THEN AthleteName ELSE NULL END AS highest_total_kg_name,
+    CASE WHEN Dots = max_dots THEN AthleteName ELSE NULL END AS highest_dots_name,
+    max_total_kg AS highest_total_kg,
+    max_dots AS highest_dots
+FROM (
+    SELECT
+        AthleteName,
+        TotalKg,
+        Dots,
+        MAX(TotalKg) OVER () AS max_total_kg,
+        MAX(Dots) OVER () AS max_dots
+    FROM openpl -- Replace with your actual table name
+) AS subquery
+WHERE TotalKg = max_total_kg OR Dots = max_dots;
+
+
+-- Raw lifters only now:
+
+SELECT AthleteName, TotalKg
+FROM openpl
+WHERE Equipment = 'Raw'
+ORDER BY TotalKg Desc
+LIMIT 1;
+
+SELECT AthleteName, DOTS
+FROM openpl
+WHERE Equipment = 'Raw'
+ORDER BY DOTS Desc
+LIMIT 1;
+
+-- How many "enhanced" lifters are there?
+
+SELECT
+	Tested
+    , COUNT(distinct(AthleteID))
+FROM openpl
+GROUP BY Tested;
+
+
+-- How many people attend the average meet?
+
+SELECT AVG(competitor_count) AS average_competitors
+FROM (
+    SELECT MeetID, COUNT(DISTINCT AthleteID) AS competitor_count
+    FROM openpl
+    GROUP BY MeetID
+) AS meet_competitors;
+
+DESCRIBE openpl;
+
+-- How many people make their third attempt?
+SELECT
+    (SUM(CASE WHEN Squat3Kg IS NOT NULL AND Squat3Kg > 0 THEN 1 ELSE 0 END) / COUNT(Squat3Kg)) * 100 AS percentage_positive_squat3
+    , (SUM(CASE WHEN Bench3Kg IS NOT NULL AND Bench3Kg > 0 THEN 1 ELSE 0 END) / COUNT(Bench3Kg)) * 100 AS percentage_positive_bench3
+    , (SUM(CASE WHEN Deadlift3Kg IS NOT NULL AND Deadlift3Kg > 0 THEN 1 ELSE 0 END) / COUNT(Deadlift3Kg)) * 100 AS percentage_positive_deadlift3
+FROM openpl
+WHERE Squat3Kg IS NOT NULL;
 
 
 
