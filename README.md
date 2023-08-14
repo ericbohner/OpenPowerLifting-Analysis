@@ -40,9 +40,9 @@ It's also interesting to see how the sport has changed over the years.  For many
 
 ![Equipment Popularity](https://github.com/ericbohner/OpenPowerLifting-Analysis/assets/131715470/d8f0581b-69e6-49c7-b7b2-6b2cc803af0a)
 
-We see that, in the very early days, knee wraps were often used, which almost went away entirely until ~2006 when it saw a sudden resurgence.  Then, in the 1977, single-ply dominated the powerlifting scene until ~2010 when Raw started to become more popular, eventually overtaking single-ply in 2015.
+We see that, in the very early days, knee wraps were often used before almost disappearing entirely until ~2006 when it saw a sudden resurgence.  Then, in 1977, single-ply dominated the powerlifting scene until ~2010 when Raw started to become more popular, eventually overtaking single-ply in 2015.
 
-Interestingly, even though Single-ply was dominant for so long, because of the growth of the sport, it only barely holds the lead over Raw: there have been 29,306 Single-ply meets with 1,319,300 athletes competing compared to 25,640 Raw meets with 1,288,288 athletes competing.  Here's a quick and dirty chart showing the distribution of equipment type by number of athletes who have competed (note that an athlete may compete in multiple events with different equipment regulations:
+Interestingly, even though Single-ply was dominant for so long, because of the growth of the sport, it only barely holds the lead over Raw: there have been 29,306 Single-ply meets with 1,319,300 athletes competing compared to 25,640 Raw meets with 1,288,288 athletes competing.  Here's a quick and dirty chart showing the distribution of equipment type by number of athletes who have competed (note that an athlete may compete in multiple events with different equipment regulations):
 
 
 ![Distribution of Equipment Type](https://github.com/ericbohner/OpenPowerLifting-Analysis/assets/131715470/e0b9c7d3-9763-4eb5-bff1-7477c57178be)
