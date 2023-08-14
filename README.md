@@ -25,6 +25,7 @@ Finally, the data was exported to a csv ('openpl.csv') and loaded into a sql dat
 Here are some interesting findings, in a simple infographic:
 
 
+![P](https://github.com/ericbohner/OpenPowerLifting-Analysis/assets/131715470/52f520fc-81a8-4d6e-9a7e-ea2f2a39086e)
 
 
 
